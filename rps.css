@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  height: 213;
+  width: 320;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
