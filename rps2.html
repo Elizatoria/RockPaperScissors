@@ -38,6 +38,45 @@ if (userSelection === random) {
           document.querySelector("#Lose").textContent = `${compare} Computer Wins`;
         }
       }
+
+      //Alternate
+      if (
+        (userSelection == "rock" && random == "scissors") ||
+        (userSelection == "scissors" && random == "paper") ||
+        (userSelection == "paper" && random == "rock")
+      ) {
+        document.querySelector("Win").textContent = `${compare} You Win`;
+      } else if (userSelection == random) {
+        document.querySelector("#Tie").textContent = `${compare} is a Tie.`;
+      } else {
+        document.querySelector("#Lose").textContent = `${compare} Computer Wins`;
+      }
+
+      //Alternate
+      if(userSelection === random){
+        GameOver.textContent = `${compare} is a Tie.`;
+    }
+    else if(userSelection == 'rock'){
+        if(random == 'paper'){
+            GameOver.textContent = `${compare} Computer Wins`;
+        }else{
+            GameOver.textContent = `${compare} You Win`;
+        }
+    }
+    else if(userSelection == 'scissors'){
+      if(random == 'rock'){
+          GameOver.textContent = `${compare} Computer Wins`;
+      }else{
+          GameOver.textContent = `${compare} You Win`;
+      }
+  }
+  else if(userSelection == 'paper'){
+      if(random == 'scissors'){
+          GameOver.textContent = `${compare} Computer Wins`;
+      }else{
+          GameOver.textContent = `${compare} You Win`;
+      }
+    }
   </script>
 </body>
 </html>
