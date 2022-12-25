@@ -8,6 +8,36 @@
   <title>RPS Game Results</title>
 </head>
 <body>
-  
+  <script>
+//Tie
+if (userSelection === random) {
+        document.querySelector("#Tie").textContent = `${compare} is a Tie.`;
+      }
+
+      //Rock
+      if (userSelection === "Rock") {
+        if (random === "Scissors") {
+          document.querySelector("Win").textContent = `${compare} You Win`;
+        } else {
+          document.querySelector("#Lose").textContent = `${compare} Computer Wins`;
+        }
+      }
+      // Paper
+      else if (userSelection === "Paper") {
+        if (random === "Rock") {
+          document.querySelector("Win").textContent = `${compare} You Win`;
+        } else {
+          document.querySelector("#Lose").textContent = `${compare} Computer Wins`;
+        }
+      }
+      // Scissors
+      else if (userSelection === "Scissors") {
+        if (random === "Paper") {
+          document.querySelector("Win").textContent = `${compare} You Win`;
+        } else {
+          document.querySelector("#Lose").textContent = `${compare} Computer Wins`;
+        }
+      }
+  </script>
 </body>
 </html>
