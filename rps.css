@@ -1,20 +1,36 @@
+/*Make Web Page Dark Contrast*/
 body {
   background-color: black;
   color: white;
 }
 
+/*Centers Test*/
 .center {
   text-align: center;
 }
 
+/*Makes Images Half the Size*/
 img {
   height: 213;
   width: 320;
 }
 
-div {
+/*Centers Image Buttons and puts them in a Row*/
+div#GameStart {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/*Centers Images*/
+div#GameOver {
+  display: flex;
+  justify-content: center;
+}
+
+/*Too Make Sure Hidden Items Stay Hidden*/
+div.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
