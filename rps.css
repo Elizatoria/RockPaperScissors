@@ -15,7 +15,7 @@ img {
   width: 320;
 }
 
-/*Centers Image Buttons and puts them in a Row*/
+/*Centers Image Buttons, puts them in a Row, and wraps them to show up on the screen no matter what.*/
 div#GameStart {
   display: flex;
   flex-direction: row;
@@ -23,9 +23,11 @@ div#GameStart {
   justify-content: center;
 }
 
-/*Centers Images*/
+/*Centers Image Buttons, puts them in a Row, and wraps them to show up on the screen no matter what.*/
 div#GameOver {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
